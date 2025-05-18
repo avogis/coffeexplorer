@@ -7,7 +7,7 @@ import coil.compose.AsyncImage
 import coil.request.ImageRequest
 
 @Composable
-fun CoffeeImage(modifier: Modifier = Modifier, url: String, description: String) {
+fun CoffeeImage(modifier: Modifier = Modifier, url: String, description: String?) {
     AsyncImage(
         model = ImageRequest.Builder(LocalContext.current)
             .data(url)
